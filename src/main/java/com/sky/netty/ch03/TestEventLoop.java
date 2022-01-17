@@ -9,6 +9,8 @@ public class TestEventLoop {
         // 可以处理
         NioEventLoopGroup group = new NioEventLoopGroup();
 
+        NioEventLoopGroup eventExecutors = new NioEventLoopGroup(2);
+
         EventLoop next = group.next();
 
         System.out.println("核心数："+NettyRuntime.availableProcessors());

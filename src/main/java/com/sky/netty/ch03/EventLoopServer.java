@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 public class EventLoopServer {
     public static void main(String[] args) {
         new ServerBootstrap()
-                .group(new NioEventLoopGroup(),new NioEventLoopGroup())
+                .group(new NioEventLoopGroup())
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
@@ -26,7 +26,7 @@ public class EventLoopServer {
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 ByteBuf buf = (ByteBuf) msg;
                                 String res = buf.toString(Charset.defaultCharset());
-                                log.debug(res);
+                                log.debug("服务端收到："+res);
                             }
                         });
                     }

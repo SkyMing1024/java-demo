@@ -27,7 +27,7 @@ public class EchoServer {
         new EchoServer(port).start();
     }
 
-    private void start() throws InterruptedException {
+    private void start() throws InterruptedException  {
             EchoServerHandler handler = new EchoServerHandler();
             // 创建EventLoopGroup
             NioEventLoopGroup eventLoopGroup = new NioEventLoopGroup();

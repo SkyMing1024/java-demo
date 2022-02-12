@@ -1,4 +1,4 @@
-package com.sky.netty.ch03;
+package com.sky.netty.ch03_1;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

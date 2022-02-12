@@ -6,27 +6,27 @@
     <node x="469.5" y="192.0">java.nio.IntBuffer</node>
     <node x="916.5" y="192.0">java.nio.FloatBuffer</node>
     <node x="323.5" y="192.0">java.nio.CharBuffer</node>
-    <node x="416.25" y="0.0">java.nio.Buffer</node>
     <node x="608.5" y="192.0">java.nio.DoubleBuffer</node>
+    <node x="416.25" y="0.0">java.nio.Buffer</node>
     <node x="169.5" y="192.0">java.nio.ShortBuffer</node>
-    <node x="531.25" y="0.0">java.lang.Comparable</node>
     <node x="770.5" y="192.0">java.nio.LongBuffer</node>
+    <node x="531.25" y="0.0">java.lang.Comparable</node>
     <node x="23.5" y="192.0">java.nio.ByteBuffer</node>
     <node x="0.0" y="294.0">java.nio.MappedByteBuffer</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="java.nio.IntBuffer" target="java.nio.Buffer">
-      <point x="-29.75" y="-26.0" />
-      <point x="499.25" y="132.0" />
-      <point x="463.75" y="132.0" />
-      <point x="0.0" y="26.0" />
-    </edge>
     <edge source="java.nio.DoubleBuffer" target="java.nio.Buffer">
       <point x="-35.5" y="-26.0" />
       <point x="644.0" y="122.0" />
       <point x="477.32142857142856" y="122.0" />
       <point x="13.571428571428555" y="26.0" />
+    </edge>
+    <edge source="java.nio.IntBuffer" target="java.nio.Buffer">
+      <point x="-29.75" y="-26.0" />
+      <point x="499.25" y="132.0" />
+      <point x="463.75" y="132.0" />
+      <point x="0.0" y="26.0" />
     </edge>
     <edge source="java.nio.IntBuffer" target="java.lang.Comparable">
       <point x="29.75" y="-26.0" />
@@ -88,15 +88,15 @@
       <point x="648.25" y="72.0" />
       <point x="54.0" y="26.0" />
     </edge>
-    <edge source="java.nio.MappedByteBuffer" target="java.nio.ByteBuffer">
-      <point x="0.0" y="-26.0" />
-      <point x="0.0" y="26.0" />
-    </edge>
     <edge source="java.nio.LongBuffer" target="java.nio.Buffer">
       <point x="-31.5" y="-26.0" />
       <point x="802.0" y="102.0" />
       <point x="490.8928571428571" y="102.0" />
       <point x="27.14285714285711" y="26.0" />
+    </edge>
+    <edge source="java.nio.MappedByteBuffer" target="java.nio.ByteBuffer">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
     </edge>
     <edge source="java.nio.ByteBuffer" target="java.nio.Buffer">
       <point x="-31.5" y="-26.0" />
@@ -105,7 +105,7 @@
       <point x="-40.714285714285666" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="525.5" y="173.0" />
+  <settings layout="Hierarchic Group" zoom="0.945845004668534" x="525.5" y="173.0" />
   <SelectedNodes />
   <Categories>
     <Category>Inner Classes</Category>

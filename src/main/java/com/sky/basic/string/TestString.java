@@ -20,12 +20,12 @@ public class TestString {
         System.out.println("s1 == s2：" + (s1==s2));  // true
         System.out.println("s1 == s3："+ (s1 == s3));  // true
         System.out.println("s1 == s4："+ (s1 == s4));  // false
-        System.out.println("s1 == s9："+ (s1 == s9));  // false
         System.out.println("s1 == s5："+ (s1 == s5));  // false
+        System.out.println("s1 == s6："+ (s1 == s6));  // true
+        System.out.println("s1 == s9："+ (s1 == s9));  // false
+        System.out.println("s1 == s10："+ (s1 == s10));  // false
         System.out.println("s4 == s5："+ (s4 == s5));  // false
         System.out.println("s4 == s9："+ (s4 == s9));  // false
-        System.out.println("s1 == s6："+ (s1 == s6));  // true
-        System.out.println("s1 == s10："+ (s1 == s10));  // false
 
 
 //        String c = "123456";

@@ -2,7 +2,7 @@ package com.sky.netty.serialize;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.ChannelOutboundHandlerAdapter;
+
 
 public class SubReqClientHandler extends ChannelInboundHandlerAdapter {
 

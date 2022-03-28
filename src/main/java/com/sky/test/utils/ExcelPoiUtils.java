@@ -27,7 +27,7 @@ public class ExcelPoiUtils {
     private final static String EXCEL2007 = "xlsx";
 
 
-    public static <T> void writeExcelSheet(List<T> dataList, Class<T> cls, Workbook wb, String sheetName,List<SuperviseBusinessHeaderDto> list) throws IOException {
+    public static synchronized  <T> void writeExcelSheet(List<T> dataList, Class<T> cls, Workbook wb, String sheetName,List<SuperviseBusinessHeaderDto> list) throws IOException {
         Field[] fields = cls.getDeclaredFields();
         List<Field> fieldList = Arrays.stream(fields)
                 .filter(field -> {
@@ -161,7 +161,7 @@ public class ExcelPoiUtils {
 
 
 
-        File file = new File("/Users/sky-mbp16/Downloads/"+sheetName+"_" + LocalDateTime.now().toString()+".xls");
+        File file = new File("/Users/skyming/Downloads/"+sheetName+"_" + LocalDateTime.now().toString()+".xls");
         FileOutputStream fout = new FileOutputStream(file);
         wb.write(fout);
         fout.close();

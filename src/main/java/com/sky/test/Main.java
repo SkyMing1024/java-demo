@@ -70,10 +70,22 @@ public class Main {
             }
         }
 
-        Workbook wb = new XSSFWorkbook();
+
+        for (int i = 0; i < 3; i++) {
+            new Thread(()->{
+                try {
+                    Workbook wb = new XSSFWorkbook();
 //        writeExcel(headerList,wb,"监督报告");
 
-        ExcelPoiUtils.writeExcelSheet(allList,SuperviseAllInfo.class,wb,"廉洁监督",sortedHeaderList);
+                    ExcelPoiUtils.writeExcelSheet(allList,SuperviseAllInfo.class,wb,"廉洁监督",sortedHeaderList);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }).start();
+
+        }
+
+
     }
 
 

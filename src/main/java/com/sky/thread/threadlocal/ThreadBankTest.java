@@ -1,4 +1,4 @@
-package com.sky.threadlocal;
+package com.sky.thread.threadlocal;
 
 public class ThreadBankTest {
     static class Bank{

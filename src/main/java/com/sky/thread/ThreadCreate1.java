@@ -17,6 +17,8 @@ public class ThreadCreate1 extends Thread {
         // 创建线程
         Thread thread1= new ThreadCreate1();
         Thread thread2= new ThreadCreate1();
+        State state = thread1.getState();
+
         thread1.start();
         thread2.start();
     }

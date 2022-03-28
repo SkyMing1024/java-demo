@@ -12,6 +12,7 @@ public class ReentrantLockDemo {
         for (int i = 0; i < 10; i++) {
             reentrantLock.lock();
             System.out.println("加锁次数："+(i+1));
+            System.out.println("count:"+ reentrantLock.getHoldCount());
         }
 
         for (int i = 0; i < 10; i++) {

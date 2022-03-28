@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 public class RedisUtil {
 
     public synchronized static Jedis getJedis(){
-        Jedis jedis = new Jedis("139.196.30.90",6379);
+        Jedis jedis = new Jedis("127.0.0.1",6379);
         return jedis;
     }
 }

@@ -6,6 +6,9 @@ import redis.clients.jedis.Transaction;
 
 import java.util.List;
 
+/**
+ * 模拟秒杀
+ */
 public class SecondSkill implements Runnable{
 
     final String iPhone = "iPhone";

@@ -22,7 +22,7 @@ public class App
         map.put("a",123);
 
         int aa = 65536;
-        int bb = 1 >> 16;
+        int bb = 1 << 16;
         System.out.println(bb);
 
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();

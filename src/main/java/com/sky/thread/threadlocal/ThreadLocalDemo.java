@@ -18,7 +18,7 @@ public class ThreadLocalDemo {
              return threadLocal.get();
          }
 
-         public void set(Integer money){
+         public void add(Integer money){
              threadLocal.set(threadLocal.get()+money);
          }
     }
@@ -35,7 +35,7 @@ public class ThreadLocalDemo {
         public void run() {
             String name = Thread.currentThread().getName();
             for (int i = 0; i < 10; i++) {
-                bank.set(10);
+                bank.add(10);
                 System.out.println(name + "-余额："+bank.get());
             }
 

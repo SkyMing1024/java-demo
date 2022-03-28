@@ -21,7 +21,8 @@ public class EchoServer {
             System.err.println("Usage: " + EchoServer.class.getSimpleName() + " <port>");
         }
         // 设置端口值
-        int port = Integer.parseInt(args[0]);
+//        int port = Integer.parseInt(args[0]);
+        int port =8080;
 
         // 调用服务器start方法
         new EchoServer(port).start();

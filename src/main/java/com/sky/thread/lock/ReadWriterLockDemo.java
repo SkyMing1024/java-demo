@@ -2,6 +2,7 @@ package com.sky.thread.lock;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ReadWriterLockDemo {
@@ -11,9 +12,8 @@ public class ReadWriterLockDemo {
         Map<String, Object> map = new HashMap<>();
 
         ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
-
-        ReentrantReadWriteLock.ReadLock readLock = readWriteLock.readLock();
-        ReentrantReadWriteLock.WriteLock writeLock = readWriteLock.writeLock();
+        Lock readLock = readWriteLock.readLock();
+        Lock writeLock = readWriteLock.writeLock();
 
     }
 
